@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
 @theme {
-
   --color-border: hsl(var(--border));
   --color-background: hsl(var(--background));
   --color-foreground: hsl(var(--foreground));
+
   --color-primary: hsl(var(--primary));
   --color-primary-foreground: hsl(var(--primary-foreground));
 
@@ -13,7 +13,6 @@
   --animate-float: float 6s ease-in-out infinite;
   --animate-pulse-subtle: pulse-subtle 4s ease-in-out infinite;
   --animate-fade-in: fade-in 0.7s ease-out forwards;
-
   --animate-fade-in-delay-1: fade-in 0.7s ease-out 0.2s forwards;
   --animate-fade-in-delay-2: fade-in 0.7s ease-out 0.4s forwards;
   --animate-fade-in-delay-3: fade-in 0.7s ease-out 0.6s forwards;
@@ -21,23 +20,22 @@
   --animate-meteor: meteor 5s linear infinite;
 
   @keyframes float {
-      0%,
-      100% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(-10px);
-      }
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
   }
-
   @keyframes pulse-subtle {
-        0%,
-        100% {
-          opacity: 1;
-        }
-        50% {
-          opacity: 0.8;
-        }
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.8;
+    }
   }
   @keyframes fade-in {
     from {
@@ -52,7 +50,7 @@
   @keyframes meteor {
     0% {
       transform: rotate(215deg) translateX(0);
-      opacity: 1; 
+      opacity: 1;
     }
     70% {
       opacity: 1;
@@ -67,32 +65,36 @@
 @layer base {
   :root {
     --background: 210 40% 98%;
-    --foreground: 222 47% 11%
+    --foreground: 222 47% 11%;
 
     --card: 0 0% 100%;
 
     --primary: 250 47% 60%;
-    --priamry-foreground: 210 40% 98%;
+    --primary-foreground: 210 40% 98%;
 
     --border: 214 32% 91%;
   }
+
   .dark {
     --background: 222 47% 4%;
-    --foreground: 213 31% 91%
+    --foreground: 213 31% 91%;
 
     --card: 222 47% 8%;
 
-    --priamry: 250 65% 65%;
+    --primary: 250 65% 65%;
     --primary-foreground: 213 31% 91%;
 
     --border: 217 33% 20%;
   }
+
   * {
     @apply border-border;
   }
+
   html {
     @apply scroll-smooth;
   }
+
   body {
     @apply bg-background text-foreground transition-colors duration-300;
     font-feature-settings: "rlig" 1, "calt" 1;
@@ -103,19 +105,19 @@
   margin-inline: auto;
   padding-inline: 2rem;
 
-  @media (width >= 640px){
+  @media (width >= 640px) {
     max-width: 640px;
   }
-  @media (width >= 768px){
+  @media (width >= 768px) {
     max-width: 768px;
   }
-  @media (width >= 1024px){
+  @media (width >= 1024px) {
     max-width: 1024px;
   }
-  @media (width >= 1280px){
-     max-width: 1280px;
+  @media (width >= 1280px) {
+    max-width: 1280px;
   }
-  @media (width >= 1400px){
+  @media (width >= 1400px) {
     max-width: 1400px;
   }
 }
