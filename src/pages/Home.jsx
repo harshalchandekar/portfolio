@@ -1,3 +1,4 @@
+import AboutSection from "../components/AboutSection";
 import HeroSection from "../components/HeroSection";
 import NavBar from "../components/NavBar";
 import StarBackground from "../components/StarBackground";
@@ -15,7 +16,7 @@ const Home = () => {
         {/* Main Content */}
 
             <HeroSection />
-
+            <AboutSection />
         {/* Footer */}
         </div>
     )
