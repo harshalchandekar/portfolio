@@ -4,7 +4,7 @@ import { Briefcase, ChartBarDecreasing, Code, Database, Network, ProjectorIcon }
 
 const AboutSection = () => {
     return (
-        <section id="#about" className="py-24 px-4 relative"> 
+        <section id="about" className="py-24 px-4 relative"> 
             {" "}
             <div className="container mx-auto mx-w-5xl">
                 <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
@@ -29,7 +29,7 @@ const AboutSection = () => {
                             <a href="#contact" className="cosmic-button">
                                 Get In touch
                             </a>
-                            <a href="" className={cn("px-6 py-2 rounded-full border border-foreground text-primary hover:bg-green-400 transition-colors duration-300",
+                            <a href="" className={cn("px-6 py-2 rounded-full border border-foreground text-primary hover:bg-green-500 transition-colors duration-300",
                                 "hover:shadow-[0_0_10px_rgba(139,92,246,0.5)] hover:scale-105 active:scale-95",
                                 ""
                             )}>
@@ -58,7 +58,7 @@ const AboutSection = () => {
                                 <Network className="h-6 w-6 text-primary" />
                                 </div>
                                 <div className="text-left">
-                                    <h4 className="text-semibold text-lg">Data Structures</h4>
+                                    <h4 className="text-semibold text-lg">Data Structures & Algorithms</h4>
                                     <p className="text-muted-foreground">
                                     Currently exploring Data Structures and Algorithms in Java to
                                      build strong problem-solving and optimization skills.
