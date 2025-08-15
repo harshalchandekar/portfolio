@@ -160,3 +160,34 @@
   padding: 0;
   text-align: center;
 }
+
+/* .form-status {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  align-items: center;
+  font-weight: 500;
+}
+
+.form-status.success {
+ background-color: rgba(34,197, 94, 0.1);
+ border: 1px solid rgba(34,197, 94, 0.2);
+ color: #4ade80;
+}
+
+.form-status.error {
+ background-color: rgba(239,68, 68, 0.1);
+ border: 1px solid rgba(239,68, 68, 0.2);
+ color: #f87171;
+} */
+
+@utility form-status {
+  @apply  mt-4 p-4 border-2 items-center font-medium;
+}
+
+@utility form-status.success {
+  @apply  bg-green-300 border-2 border-black;
+}
+@utility form-status.error {
+  @apply  bg-red-400 border-2 border-black;
+}
