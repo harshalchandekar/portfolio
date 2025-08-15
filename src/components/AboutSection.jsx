@@ -29,7 +29,9 @@ const AboutSection = () => {
                             <a href="#contact" className="cosmic-button">
                                 Get In touch
                             </a>
-                            <a href="https://drive.google.com/file/d/1qRU-7UueGnK_v_WFciZkrqUrZzC4TL5K/view" className={cn("px-6 py-2 rounded-full border border-foreground text-primary hover:bg-green-500 transition-colors duration-300",
+                            <a href="https://drive.google.com/file/d/1gVFR4FYuLZ7BUvdP-5KsyA2_l5XFNgFm/view"
+                                target="_blank" rel="noopener noreferrer"
+                            className={cn("px-6 py-2 rounded-full border border-foreground text-primary hover:bg-green-500 transition-colors duration-300",
                                 "hover:shadow-[0_0_10px_rgba(139,92,246,0.5)] hover:scale-105 active:scale-95",
                                 ""
                             )}>
